@@ -247,7 +247,7 @@ h2 {
     width: 100%;
     background-color: #e0d5d7;
     color: #1e1d1a;
-    gap: 10px;
+    gap: 15px;
     padding: 10px;
 }
 
@@ -272,7 +272,7 @@ h2 {
 }
 
 .noti h3, .fecha-noti {
-    margin-left: 4px;
+    margin-left: 6px;
 }
 
 .noti h3 {
@@ -281,7 +281,7 @@ h2 {
 
 .detalle-noti {
     color: #1e1d1a;
-    margin: 4px;
+    margin: 6px;
     padding: 2px;
 }
 
@@ -292,7 +292,7 @@ h2 {
 .noti .imagen-noticia {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 350px;
     object-fit: cover;
 }
 
