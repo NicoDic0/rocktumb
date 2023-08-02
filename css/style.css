@@ -112,14 +112,11 @@ nav a:hover {
 
 .carousel-item {
     height: fit-content;
-	display: none;
 	overflow: hidden;
 }
 
 .carousel-item img {
-    width: fit-content;
-    height: fit-content;
-    position: center bottom;
+    position: center bottom; 
     box-sizing: border-box
 }
 
@@ -979,14 +976,12 @@ footer ul li {
 footer ul li img {
     width: 30px;
     height: auto;
-    display: flex;
     padding-top: 30px;
     transition: 0.25s;
 }
 
 footer ul li img:hover {
-    width: 35px;
-    height: auto;
+    transform: scale(1.2);
 }
 
 
@@ -994,14 +989,14 @@ footer ul li img:hover {
     width: 250px;
     height: auto;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
 /* mediaqueries */
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
     
     .noticias {
         display: grid;
@@ -1076,7 +1071,7 @@ footer ul li img:hover {
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     
     .carousel-agenda {
         display: flex;
@@ -1161,12 +1156,14 @@ footer ul li img:hover {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     
     nav, nav ul {
         flex-direction: column;
     }
     
-
+    .carousel-item img {
+        transform: translateX(-30%);
+    }
 
 }
