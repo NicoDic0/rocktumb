@@ -983,6 +983,20 @@ footer ul li img:hover {
         width: 100%;
     }
 
+    .coberturas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        background-color: #e0d5d7;
+        color: #1e1d1a;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .cont-coberturas {
+        width: 100%;
+    }
+
     .cont-slider {
         width: 100%;
 }
@@ -1037,6 +1051,21 @@ footer ul li img:hover {
     .contenedor-noticias {
         width: 100%;
     }
+
+    .coberturas {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        background-color: #e0d5d7;
+        color: #1e1d1a;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .cont-coberturas {
+        width: 100%;
+    }
+
 
     .cont-slider {
         width: 100%;
