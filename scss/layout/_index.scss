@@ -213,16 +213,19 @@ h2 a {
     border-radius: 1%;
 }
 
-.fecha-noti {
-    display: flex;
-    font-size: 12px;
-    color: #504f4f;
-    margin-top: 4px;
-}
+
 
 .noti {
     @include flex(column,none,none);
     width: 100%;
+
+    .fecha-noti {
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+        color: #525252;
+        margin-top: 4px;
+    }
 
     h4 {
         font-size: 24px;
@@ -236,9 +239,13 @@ h2 a {
     h4 a {
         color: #0e0e0c;
         text-decoration: none;
-
+        transition: 0.5s;
     }
 
+    h4 a:hover {
+        font-weight: bold;
+    }
+    
 
     .imagen-noticia {
         display: flex;
