@@ -1,0 +1,15 @@
+/* CONTENEDOR SECCION COBERTURAS */
+
+.seccion-coberturas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    background-color: #e0d5d7;
+    color: #1e1d1a;
+    gap: 10px;
+    padding: 10px;
+}
+
+.titulo-seccionCobertura a {
+    font-size: 22px;
+}

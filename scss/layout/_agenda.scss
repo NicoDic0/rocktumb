@@ -1,0 +1,46 @@
+/* AGENDA SOLA */
+
+.cont-agendaSola {
+    display: flex;
+    flex-direction: column;
+    background-color: #6e6e6e;
+    width: 100%;
+    max-height: 610px;
+    align-items: center;
+
+        h1 {
+            display: flex;
+            background-color: #9f9ca3 ;
+            color: #1e1d1a;
+            width: 100%;
+            max-height: 50px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+}
+
+
+.agenda-sola {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    background-color: #dfdfdf;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.agenda-img {
+    text-align: center;
+
+        img {
+            margin: 2px;
+            width: 20px ;
+            height: 20px;
+        }
+}
+
+/* agenda-desc COMPARTE MISMA ESTRUCTURA CON INDEX */
+

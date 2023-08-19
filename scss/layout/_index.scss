@@ -1,0 +1,309 @@
+.body-index {
+    max-width: 1400px;
+    margin: auto;    
+}
+
+/* BACKGROUND */
+
+body {
+    background-image: url(../assets/imagenes/imagen-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo-principal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    height: 100px;
+}
+
+.logo {
+    width: 350px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.menu-desplegable {
+    display: none;
+}
+
+/* CAROUSEL + AGENDA */
+
+.carousel-agenda {
+    display:grid;
+    grid-template-columns: 70% auto;
+    gap: 0;
+    height:500px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+	width: 100%;
+	background: #000000;
+	overflow: hidden;
+} 
+
+.carousel-item {
+    height: fit-content;
+	overflow: hidden;
+
+    img {
+        position: center bottom; 
+        box-sizing: border-box
+    }
+}
+
+.carousel-caption {
+    width: 75%;
+    background-color: rgba(117, 117, 117, 0.5);
+    position: absolute;
+    left: 2%; 
+    padding: 5px;
+}
+
+h4 {
+    text-align: left;
+    padding: 5px;
+}
+
+h4 a {
+    color: #ffffff;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+/* AGENDA */
+
+@mixin flex ($direction, $justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+.cont-agenda {
+    @include flex (column,center,center);
+    width: 100%;
+    max-height: 500px;
+}
+
+h2 {
+    @include flex (none,center,center);
+    background-color: #9f9ca3;
+    color: #1e1d1a;
+    width: 100%;
+    max-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.agenda {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    width: 100%;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.agenda-img {
+    text-align: center;
+
+    img {
+        margin: 2px;
+        width: 20px ;
+        height: 20px;
+    }
+}
+
+.agenda-desc {
+
+    a {
+        text-decoration: none;
+        color: #1e1d1a;
+        transition: 0.5s;
+    }
+
+    .fecha {
+        font-size: 14px;
+        color: #757575;
+        border-left: 2px solid black;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    
+    .fecha-banda {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        border-left: 2px solid black;
+        padding-left: 10px;
+    }
+    
+    .fecha-lugar {
+        text-align: left;
+        border-left: 2px solid black;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    
+    &:hover {
+        background-color: #9c9e9d75;
+    }
+}
+
+/* NOTICIAS INDEX */
+
+.separador-noticias {
+    display: flex;
+    width: 100%;
+    background-color: #9f9ca3 ;
+    color: #1e1d1a;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+    p {
+        font-size: 22px;
+        align-items: center;
+        font-weight: bold;
+        transform: translateY(3%);
+        padding-left: 10px;
+    }
+}
+
+
+.noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color: #e0d5d7;
+    color: #1e1d1a;
+    gap: 15px;
+    padding: 10px;
+}
+
+.cont-noticias {
+    display: flex;
+    background-color: #9f9ca3;
+    width: 100%;
+    border-radius: 1%;
+}
+
+.fecha-noti {
+    display: flex;
+    font-size: 12px;
+    color: #504f4f;
+    margin-top: 4px;
+}
+
+.noti {
+    @include flex(column,none,none);
+    width: 100%;
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    h3, .fecha-noti {
+        margin-left: 6px;
+    }
+
+    h3 a {
+        color: #1e1d1a;
+        text-decoration: none;
+
+    }
+
+
+    .imagen-noticia {
+        display: flex;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .leer  {
+        display: flex;
+        width: 27px;
+        height: 27px;
+        margin: 4px;
+        padding: 2px;
+    }
+
+    .leer a {
+        text-decoration: none;
+    }
+
+    
+}
+
+
+.detalle-noti {
+    font-size: 16px;
+    color: #1e1d1a;
+    margin: 6px;
+    padding: 2px;
+}
+
+
+/* COBERTURAS INDEX */
+
+.separador-coberturas {
+    @extend .separador-noticias
+}
+
+
+.coberturas {
+    @extend .noticias
+}
+
+.cont-coberturas {
+    @extend .cont-noticias
+}
+
+.fecha-cober {
+    @extend .fecha-noti
+}
+
+.cobertura {
+    @extend .noti
+}
+
+.titulo-cobertura {
+    font-size: 26px;
+}
+
+.imagen-cobertura {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+}
+

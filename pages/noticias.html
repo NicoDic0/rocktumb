@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Favicom -->
     <link rel="shortcut icon" href="../assets/logos/favicom.png" type="image/x-icon">
+    <!-- Link al css -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>RockTumb</title>
+    <title>Noticias RockTumb</title>
 </head>
 
+<body class="body-index">
+<!-- LOGO PRINCIPAL -->
+<section class="logo-principal">
+    <div class="logo" id="top">
+        <a href="../index.html"><img src="../assets/logos/logo.png" alt="logo rocktumb"></a>
+    </div>
+<!-- INICIO MENU DESPLEGABLE -->
+    <div class="menu-desplegable">
 
+    <button class="boton btn-primario" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="../assets/logos/icons8-hamburger-menu-64.png" alt="icono menu desplegable"></button>
 
-    <section class="logo-principal">
-        <div class="logo" id="top">
-            <a href="../index.html"><img src="../assets/logos/logo.png" alt=""></a>
-        </div>
-    </section>
+<div class="offcanvas offcanvas-top" data-bs-scroll="true" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+<div class="offcanvas-header">
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+<nav>
+    <ul>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="noticias.html">NOTICIAS</a></li>
+        <li><a href="coberturas.html">COBERTURAS</a></li>
+        <li><a href="agenda.html">AGENDA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+</nav>
+</div>
+</div>
 
+</section>
+<!-- INICIO HEADER -->
     <header>
     <nav class="inicio">
         <ul>
@@ -30,78 +55,103 @@
 </header>
 
 
-<body class="body-index">
+
     
 
-
+<!-- INICIO MAIN -->
     <main>
 
 
 <div class="separador-noticias">
-    <img src="../assets/logos/noticias.png" alt=""><p>NOTICIAS</p>
+    <img src="../assets/logos/noticias.png" alt="icono noticias"><p>NOTICIAS</p>
 </div>
 
 <section class="noticias">
-<div class="cont-noticias">
-    <div class="noti">
-    <p class="fecha-noti">28/07/23</p>
-    <a href="noticia-individual.html"><h3>LUCIANA SEGOVIA vuelve a La Tangente!</h3></a>
-        <img class="imagen-noticia" src="../assets/imagenes/luli2222.jpg" alt="">
-        <p class="detalle-noti">Luego de la presentación de <strong>"FÉNIX"</strong> su última canción y video, <strong>Luciana Segovia</strong> vuelve a <strong>La Tangente</strong> dónde estará adelantando material de lo que será su segundo disco de estudio.
-        </p>
-        <a href="noticia-individual.html"><img class="leer" src="../assets/logos/leer.svg" alt=""></a>
+    <div class="cont-noticias">
+        <div class="noti">
+        <p class="fecha-noti">28/07/23</p>
+        <h3><a href="noticia-individual.html">LUCIANA SEGOVIA vuelve a La Tangente!</a></h3>
+            <img class="imagen-noticia" src="../assets/imagenes/luli2222.jpg" alt="">
+            <p class="detalle-noti">Luego de la presentación de <strong>"FÉNIX"</strong> su última canción y video, <strong>Luciana Segovia</strong> vuelve a <strong>La Tangente</strong> dónde estará adelantando material de lo que será su segundo disco de estudio.
+            </p>
+            <a class="leer" href="noticia-individual.html"><img src="../assets/logos/leer.svg" alt=""></a>
+        </div>
     </div>
-</div>
-<div class="cont-noticias">
-    <div class="noti">
-            <p class="fecha-noti">28/07/23</p>
-    <a href=""><h3>ASSPERA en La Plata!</h3></a>
-        <img class="imagen-noticia" src="../assets/noticias/Asspera22.jpg" alt="">
-        <p class="detalle-noti">Lorem ipsum elit. Cumque officia exercitationem atque suscipit eum ab aut, amet, laborum consectetur tenetur qui hic inventore, praesentium eos libero error natus officiis ratione. qui hic inventore?ui hic inventore, praesentium eos libero error natus officiis ratione. qui hic inventore</p>
-        <a href=""><img class="leer" src="../assets/logos/leer.svg" alt=""></a>
-    </div>            
-</div>
-<div class="cont-noticias">
-    <div class="noti">
-            <p class="fecha-noti">28/07/23</p>
-    <a href=""><h3>COTI estrena nuevo tema!</h3></a>
-        <img class="imagen-noticia" src="../assets/noticias/Coti-2.jpeg" alt="">   
-        <p class="detalle-noti">Lorem ipsum dol quos totam architecto laboriosam eius! Est quibusdam possimus ducimus inventore.</p>
-        <a href=""><img class="leer" src="../assets/logos/leer.svg" alt=""></a>
-    </div>    
-</div>
-<div class="cont-noticias">
-    <div class="noti">
-            <p class="fecha-noti">28/07/23</p>
-    <a href=""><h3>GHOST vuelve a la Argentina!</h3></a>
-    <img class="imagen-noticia" src="../assets/noticias/Ghost-1.jpg" alt="">
-        <p class="detalle-noti">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repudiandae adipisci beatae, libero voluptate suscipit quibusdam odio consequatur at facere, repellat atque enim? Vitae, reprehenderit?</p>
-        <a href=""><img class="leer" src="../assets/logos/leer.svg" alt=""></a>
+    <div class="cont-noticias">
+        <div class="noti">
+                <p class="fecha-noti">28/07/23</p>
+        <h3><a href="">ASSPERA en La Plata!</a></h3>
+            <img class="imagen-noticia" src="../assets/noticias/Asspera22.jpg" alt="">
+            <p class="detalle-noti"><b>Asspera</b>, la banda más importante del metal bizarro, regresa al Teatro Ópera La Plata.</p>
+            <a class="leer" href=""><img src="../assets/logos/leer.svg" alt=""></a>
+        </div>            
     </div>
-</div>
-<div class="cont-noticias">
-    <div class="noti">
-            <p class="fecha-noti">28/07/23</p>
-    <a href=""><h3>HAKEN se prensenta en el Teatrito!</h3></a>
-    <img class="imagen-noticia" src="../assets/noticias/Haken-3.jpg" alt="">
-        <p class="detalle-noti">Lorem ipsum praesentium eos libero error natus officiis ratione. qui hic inventore?</p>
-        <a href=""><img class="leer" src="../assets/logos/leer.svg" alt=""></a>
-    </div>            
-</div>
-
-</div>
+    <div class="cont-noticias">
+        <div class="noti">
+                <p class="fecha-noti">28/07/23</p>
+        <h3><a href="">COTI estrena nuevo tema!</a></h3>
+            <img class="imagen-noticia" src="../assets/noticias/Coti-2.jpeg" alt="">   
+            <p class="detalle-noti">En medio de su gira con más de doce shows por todo Europa, <b>Coti</b> nos deja entrever lo que será su nuevo álbum que se estrenará este año, con este segundo adelanto <b>“Madrid sin vos”</b>.</p>
+            <a class="leer" href=""><img src="../assets/logos/leer.svg" alt=""></a>
+        </div>    
+    </div>
+    <div class="cont-noticias">
+        <div class="noti">
+                <p class="fecha-noti">28/07/23</p>
+        <h3><a href="">GHOST vuelve a la Argentina!</a></h3>
+        <img class="imagen-noticia" src="../assets/noticias/Ghost-1.jpg" alt="">
+            <p class="detalle-noti"><b>Ghost</b>, una de las bandas mas importantes del Hard Rock de Suecia, llega a la Argentina con un show monumental el 24 de septiembre en el <b>Movistar Arena.</b></p>
+            <a class="leer" href=""><img  src="../assets/logos/leer.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="cont-noticias">
+        <div class="noti">
+                <p class="fecha-noti">28/07/23</p>
+                <h3><a href="">HAKEN se prensenta en el Teatrito!</a></h3>
+        <img class="imagen-noticia" src="../assets/noticias/Haken-3.jpg" alt="">
+            <p class="detalle-noti">La agrupación británica de metal progresivo liderada por Rich Henshall presentará su nuevo álbum <b>“Fauna”</b> y realizará un repaso por los clásicos de su discografía.</p>
+            <a class="leer" href=""><img src="../assets/logos/leer.svg" alt=""></a>
+        </div>            
+    </div>
+    <div class="cont-noticias">
+        <div class="noti">
+                <p class="fecha-noti">28/07/23</p>
+                <h3><a href="">Los Pericos anuncian nueva gira!</a></h3>
+        <img class="imagen-noticia" src="../assets/noticias/Pericos-2.jpg" alt="">
+            <p class="detalle-noti">El Reggae vuelve a la calle Corrientes! Repasando su repertorio plagado de hits, <b>Los Pericos</b> tocarán en el <b>Teatro Opera</b> para continuar presentando su nuevo disco <b>"Viva Pericos"</b>.</p>
+            <a class="leer" href=""><img src="../assets/logos/leer.svg" alt=""></a>
+        </div>            
+    </div>
+    
+    </div>
+    
 
 
 </section>
 </main>
 
-
+<!-- INICIO FOOTER -->
 <footer>
-    <ul>
-        <li><a href="https://www.facebook.com/rocktumb" target="_blank"><img src="../assets/logos/facebook.png" alt="boton/logo facebook footer"></a></li>
-        <li><a href="https://www.instagram.com/rocktumb" target="_blank"><img src="../assets/logos/insta.png" alt="boton/logo instagram footer"></a></li>
-        <li><a href="prensarocktumb@gmail.com" target="_blank"><img src="../assets/logos/gmail.png" alt="boton/logo Gmail"></a></li>
-        <li><a href="https://www.twitter.com/rocktumb" target="_blank"><img src="../assets/logos/twitter.png" alt="boton/logo twitter"></a></li>
+    <ul class="rrss">
+        <li>
+            <a href="https://www.facebook.com/rocktumb" target="_blank">
+                <img src="../assets/logos/facebook.svg" alt="boton/logo facebook footer">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/rocktumb" target="_blank"><img src="../assets/logos/instagram.svg" alt="boton/logo instagram footer">
+        </a>
+        </li>
+        <li>
+            <a href="prensarocktumb@gmail.com" target="_blank">
+            <img src="../assets/logos/envelope.svg" alt="boton/logo Gmail">
+        </a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/rocktumb" target="_blank">
+            <img src="../assets/logos/twitter.svg" alt="boton/logo twitter">
+        </a>
+        </li>
     </ul>
 
     <div class="logo-footer">
