@@ -74,12 +74,12 @@ body {
     padding: 5px;
 }
 
-h4 {
+h2 {
     text-align: left;
     padding: 5px;
 }
 
-h4 a {
+h2 a {
     color: #ffffff;
     font-size: 35px;
     text-decoration: none;
@@ -100,10 +100,10 @@ h4 a {
     max-height: 500px;
 }
 
-h2 {
+.titulo-agendaIndex {
     @include flex (none,center,center);
-    background-color: #9f9ca3;
-    color: #1e1d1a;
+    background-color: #aeabb1;
+    color: #0e0e0c;
     width: 100%;
     max-height: 50px;
     font-weight: bold;
@@ -136,7 +136,7 @@ h2 {
 
     a {
         text-decoration: none;
-        color: #1e1d1a;
+        color: #0e0e0c;
         transition: 0.5s;
     }
 
@@ -175,8 +175,8 @@ h2 {
 .separador-noticias {
     display: flex;
     width: 100%;
-    background-color: #9f9ca3 ;
-    color: #1e1d1a;
+    background-color: #aeabb1 ;
+    color: #0e0e0c;
     background-position: center;
     text-align: center;
     padding: 10px;
@@ -201,14 +201,14 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     background-color: #e0d5d7;
-    color: #1e1d1a;
+    color: #0e0e0c;
     gap: 15px;
     padding: 10px;
 }
 
 .cont-noticias {
     display: flex;
-    background-color: #9f9ca3;
+    background-color: #aeabb1;
     width: 100%;
     border-radius: 1%;
 }
@@ -224,17 +224,17 @@ h2 {
     @include flex(column,none,none);
     width: 100%;
 
-    h3 {
+    h4 {
         font-size: 24px;
     }
 
 
-    h3, .fecha-noti {
+    h4, .fecha-noti {
         margin-left: 6px;
     }
 
-    h3 a {
-        color: #1e1d1a;
+    h4 a {
+        color: #0e0e0c;
         text-decoration: none;
 
     }
@@ -266,7 +266,7 @@ h2 {
 
 .detalle-noti {
     font-size: 16px;
-    color: #1e1d1a;
+    color: #0e0e0c;
     margin: 6px;
     padding: 2px;
 }

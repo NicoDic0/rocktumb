@@ -8,17 +8,19 @@
     max-height: 610px;
     align-items: center;
 
-        h1 {
-            display: flex;
-            background-color: #9f9ca3 ;
-            color: #1e1d1a;
-            width: 100%;
-            max-height: 50px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
+        
+}
+
+.titulo-agenda {
+    display: flex;
+    background-color: #9f9ca3 ;
+    color: #1e1d1a;
+    width: 100%;
+    max-height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 
@@ -42,5 +44,13 @@
         }
 }
 
-/* agenda-desc COMPARTE MISMA ESTRUCTURA CON INDEX */
+.fecha-bandaAgenda {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+/* agenda-desc COMPARTE PARTE DE LA ESTRUCTURA CON EL INDEX */
 
