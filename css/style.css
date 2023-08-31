@@ -175,12 +175,12 @@ body {
   padding: 5px;
 }
 
-h2 {
+.titulo-slide {
   text-align: left;
   padding: 5px;
 }
 
-h2 a {
+.titulo-slide a {
   color: #ffffff;
   font-size: 35px;
   text-decoration: none;
@@ -222,6 +222,20 @@ h2 a {
   background-color: #aeabb1;
   width: 100%;
   border-radius: 1%;
+}
+
+.titulo-noticias {
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: 6px;
+}
+.titulo-noticias a {
+  color: #0e0e0c;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.titulo-noticias a:hover {
+  font-weight: bold;
 }
 
 .noti, .cobertura {

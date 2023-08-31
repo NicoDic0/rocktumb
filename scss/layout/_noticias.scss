@@ -41,7 +41,21 @@
     border-radius: 1%;
 }
 
-
+.titulo-noticias {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 6px;
+    
+    a {
+    color: $color-textoPrimario;
+    text-decoration: none;   
+    transition: 0.3s ease; 
+    }
+    
+    a:hover {
+    font-weight: bold;
+    }
+}
 
 .noti {
     display: flex;
