@@ -2,36 +2,12 @@
 
 @media screen and (max-width: 1024px) {
     
-    .noticias {
+    .noticias , .coberturas , .seccion-coberturas {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-        background-color: #e0d5d7;
-        color: #1e1d1a;
-        gap: 10px;
-        padding: 10px;
-    }
-    
-    .coberturas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        background-color: #e0d5d7;
-        color: #1e1d1a;
-        gap: 10px;
-        padding: 10px;
-    }
-    
 
-    .seccion-coberturas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        background-color: #e0d5d7;
-        color: #1e1d1a;
-        gap: 10px;
-        padding: 10px;
     }
+    
 
 }
 
@@ -43,65 +19,27 @@
         width: 100%;
     }
 
-    .noticias {
+    .noticias , .coberturas , .seccion-coberturas {
         display: grid;
         grid-template-columns: 1fr;
-        width: 100%;
-        background-color: #e0d5d7;
-        color: #1e1d1a;
-        gap: 10px;
-        padding: 10px;
     }
     
 
-    .coberturas {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        background-color: #e0d5d7;
-        color: #1e1d1a;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .seccion-coberturas {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        background-color: #e0d5d7;
-        color: #1e1d1a;
-        gap: 10px;
-        padding: 10px;
-    }
 
 
-    .cont-agenda {
+    .cont-agenda , .cont-agendaNoticia , .agendaNoticia {
         display: none;
 }
 
-    .cont-agendaNoticia {
-        display: none;
-}
 
-    .agendaNoticia {
-        display: none;    
-}
-
-    .contendor-noticiasAgenda {
+    .contendor-noticiasAgenda , .contendor-coberturaAgenda {
         display: flex;
 }
 
-    .contenedor-noticia {
+    .contenedor-noticia , .contenedor-cobertura {
         width: 100%;
 }
 
-    .contendor-coberturaAgenda {
-        display: flex;
-}
-
-    .contenedor-cobertura {
-        width: 100%;
-}
 
 
 }
@@ -140,6 +78,10 @@
         box-shadow: none;
         border: 0px;
         padding: 0;
+    }
+
+    .offcanvas.offcanvas-top { 
+        height: 300px;
     }
 
     .offcanvas-header , .offcanvas-body {

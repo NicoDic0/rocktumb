@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $color-fondoPublicacion;
 }
 
 .fecha-noticia {
@@ -75,7 +75,7 @@ iframe {
 
     p a {
         text-decoration: none;
-        color: #1e1d1a;
+        color: $color-textoPrimario;
         transition: 0.3s;
     }
 
